@@ -1,0 +1,91 @@
+.theme {
+  background-color: #dddddd;
+}
+
+.alpha {
+  height: 90vh;
+}
+
+#test {
+  min-height: 100vh;
+}
+
+.cardimg {
+  min-height: 40px;
+}
+
+.bg-card-theme {
+  background-color: #f6d186;
+}
+
+.hero-background {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+Link {
+  text-decoration: none;
+}
+
+.info-btn-cl {
+  background-color: #ab02c2;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  top: 0;
+  background: #ab02c2;
+  transition: 0.2s;
+}
+.nav-item:hover::after {
+  width: 100%;
+  /* color: #ab02c2; */
+}
+/* .navbar-dark .navbar-nav .active > .nav-link, */
+.nav-link:hover {
+  color: #ab02c2;
+}
+.nav-link {
+  color: rgb(31, 8, 117);
+  padding: 15px 5px;
+  transition: 0.2s;
+}
+.grow-div {
+  transition: 1s ease;
+}
+
+.grow-div:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  /* margin-left: 30px; */
+  margin-top: 5px;
+}
+.floating:hover {
+  animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 15px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
